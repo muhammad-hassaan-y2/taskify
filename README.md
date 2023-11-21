@@ -16,3 +16,8 @@ After Setting up the project
            * Marketing Page completed
 
 
+# Now we are making the Authenthication Page
+
+            * We added a middleware
+            * We added authenthication from the clerk
+            * Authentication Part Completed
