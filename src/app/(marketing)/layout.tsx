@@ -1,3 +1,6 @@
+import { Footer } from "./_components/footer";
+import { Navbar } from "./_components/navbar";
+
 const MarketingLayout = ({
     children
 }: {
@@ -6,14 +9,17 @@ const MarketingLayout = ({
  return (
      <div className="h-full bg-slate-100">
 
-        {/* Footer Over here */}
+        {/* Navbar Over here */}
 
-
+            <Navbar />
+     
         <main className="pt-40 pb-20 bg-slate-100">
         {children}
         </main>
 
          {/* Footer Over here */}
+
+         <Footer />
 
      </div>
  )

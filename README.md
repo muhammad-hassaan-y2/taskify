@@ -13,5 +13,6 @@ After Setting up the project
            * Imported a button from the Shadcn.
            * Added a Link component in the button.
            * Button navigates to the sign-up page.
+           * Marketing Page completed
 
 
