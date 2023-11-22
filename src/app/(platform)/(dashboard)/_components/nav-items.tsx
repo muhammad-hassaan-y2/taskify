@@ -9,6 +9,7 @@ import { Activity, CreditCard, Layout, Settings,} from "lucide-react";
 import { useRouter, usePathname } from 'next/navigation';
 import { AccordionContent } from '@/src/components/ui/accordion';
 import { Button } from '@/src/components/ui/button';
+import { Skeleton } from '@/src/components/ui/skeleton';
 
 export type Organization = {
     id: string;
@@ -47,7 +48,7 @@ const NavItem = ({
         {
             label: "Settings",
             icon: <Settings className='h-4 w-4 mr-2' />,
-            href: `/organization/${organization.id}/Settings`
+            href: `/organization/${organization.id}/settings`
         },
         {
             label: "Billing",
@@ -107,3 +108,15 @@ const NavItem = ({
 }
 
 export default NavItem
+
+
+NavItem.Skeleton = function SkeletopnNavItem () {
+  return (
+    <div className='flex items-center gap-x-2'>
+      <div className='w-10 h-10 relative shrink-0'>
+        <Skeleton  className='w-full h-full absolute'/>
+      </div>
+      <Skeleton className='h-10 w-full ' />
+    </div>
+  )
+}
