@@ -1,7 +1,6 @@
 import { Button } from "@/src/components/ui/button";
 import Logo from "@/src/components/Logo";
 
-
 export const Footer = () => {
   return (
     <div className="fixed bottom-0 w-full p-4 border-t bg-slate-100">

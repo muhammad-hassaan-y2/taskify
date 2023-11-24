@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { authMiddleware, redirectToSignIn } from "@clerk/nextjs";
- 
+
 // This example protects all routes including api/trpc routes
 // Please edit this to allow other routes to be public as needed.
 // See https://clerk.com/docs/references/nextjs/auth-middleware for more information about configuring your Middleware
@@ -26,10 +26,9 @@ export default authMiddleware({
       const orgSelection = new URL("/select-org", req.url);
       return NextResponse.redirect(orgSelection);
     }
-  }
+  },
 });
- 
+
 export const config = {
-  matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
+  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
 };
- 
