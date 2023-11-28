@@ -58,3 +58,6 @@ After Setting up the project
                      npm i zod
             * We use useFormState and useFormStatus
             * After clicking on Submit or Delete Button we maked them disabled
+
+# Adding unsplash api key from the Unsplash developers site
+          * It is a demo key
